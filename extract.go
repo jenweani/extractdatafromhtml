@@ -63,7 +63,7 @@ func main() {
 	defer outputFile.Close()
 
 	for _, data := range extractedData {
-		_, err := outputFile.WriteString(data + "\n")
+		_, err := outputFile.WriteString(data + ",")
 		if err != nil {
 			log.Fatal(err)
 		}
